@@ -1,144 +1,189 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* position: absolute; */
-    font-family: verdana, sans-serif;
-    /* overflow-x: hidden; */
-}
-
-section.landing{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("building.jpg");
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
-
-section.landing > *{
-    position: relative;
-    z-index: 2;
-}
-section.landing:after{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(0, 0, 0, .2); */
-    /* background-image: linear-gradient(to bottom, #000, #000, #fff); */
-    content: '';
-    left: 0;
-    top: 0;
-
-}
-img{
-    width: 60%;
-    height: auto;
-    left: 290px;
-    position: sticky;
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: absolute;
+        font-family: verdana, sans-serif;
+        /* overflow-x: hidden; */
+        background-color: rgb(201, 201, 201);
+        width: 100vw;
+    }
     
-}
-div.shape{
-    top: 160px;
-    right: 50px;
-    border-radius: 15px;
-    background-color: rgb(110, 230, 94);
-    color: whitesmoke;   
-}
-div.shape:hover{
-    background-color: white;
-    color: rgb(110, 230, 94);
-}
-
-
-/* NAV STYLING */
-
-div.nav{
-    height: 200px;
-    width: 100%;
-    background-color: rgb(136, 136, 139);
-}
-ul.nav{
-    align-items: center;
-}
-
-div.header{
-    background-image: url("building.jpg");
-    background-position: cover ;
-    background-size: cover;
-    height: 200px;
-    width: 100%;
-    position: absolute;
-}
-img.img-header{
-
-    height: 150px;
-    width: auto;
-    position: relative;
-    top: 30px;
-    left: 325px;
-}
-div.book-btn{
+    section.landing {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("building.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     
-    font-size: 14px;
-    border-radius: 20px;
-    width: 40vw;
-    background-color: #cecece;
-}
-
-div.events{
-    height: 200px;
-    width: 100%;
-    border-top: 1px solid black;
-}
-
-div.event{
-    border: 1px solid black;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 40vw;
-}
-
-/* MISSION STYLING */
-div.mission{
-    height: 800px;
-    width: 100%;
-    background-color: darkmagenta;
-}
-div.small-line{
+    section.landing>* {
+        position: relative;
+        z-index: 4;
+    }
     
-    border-bottom: 2px solid #ccc;
+    section.landing:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, .2); */
+        /* background-image: linear-gradient(to bottom, #000, #000, #fff); */
+        content: '';
+        left: 0;
+        top: 0;
+    }
     
-}
-
-div.long-line{
-    border-bottom: 2px solid #ccc;
-    /* margin-left: 60px; */
+    img.landing {
+        width: 50%;
+        height: auto;
+        left: 500px;
+        position: sticky;
+    }
     
-}
-div.mi{
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-}
-
-/* BOOKING STYLING */
-div.booking{
-    height: 800px;
-    width: 100%;
-    background-color: rgb(255, 251, 0);
-}
-div.testimonials{
-    height: 800px;
-    width: 100%;
-    background-color: rgb(0, 255, 170);
-}
-div.contact{
-    height: 800px;
-    width: 100%;
-    background-color: rgb(255, 0, 0);
-}
+    div.shape {
+        top: 275px;
+        right: 120px;
+        border-radius: 15px;
+        background-color: rgb(110, 230, 94);
+        color: whitesmoke;
+        width: 400px;
+        /* position: fixed; */
+    }
+    
+    div.shape:hover {
+        background-color: white;
+        color: rgb(110, 230, 94);
+    }
+    /* NAV STYLING */
+    
+    section.nav {
+        /* height: 200px; */
+        width: 100%;
+        /* background-color: rgb(136, 136, 139); */
+    }
+    
+    ul.nav {
+        align-items: center;
+    }
+    
+    div.header {
+        background-image: url("building.jpg");
+        background-position: center right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 190px;
+        width: 100%;
+        top: -70px;
+        /* position: absolute; */
+    }
+    
+    img.img-header {
+        height: 200px;
+        width: 500px;
+        position: relative;
+        top: 10px;
+        left: 550px;
+    }
+    
+    div.book-btn {
+        font-size: 14px;
+        border-radius: 20px;
+        width: 40vw;
+        background-color: #7cb2f8;
+    }
+    
+    div.events {
+        height: 200px;
+        width: 100%;
+        border-top: 1px solid black;
+    }
+    
+    div.event {
+        border: 1px solid black;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 40vw;
+    }
+    /* MISSION STYLING */
+    
+    section.mission {
+        /* height: 800px; */
+        width: 100%;
+        position: relative;
+        /* background-color: darkmagenta; */
+    }
+    
+    div.small-line {
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+    
+    div.long-line {
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+    
+    div.mi {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    div.mission {}
+    
+    img.profile-pic {
+        width: 30vw;
+        height: 500px;
+        position: relative;
+        /* border-radius: 40% */
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        z-index: 3;
+    }
+    
+    div.ppimg {
+        border-radius: 100%;
+        position: relative;
+        /* z-index: 3; */
+        background-color: #7cb2f8;
+        display: flex;
+        justify-content: center;
+        z-index: 5;
+    }
+    
+    div.ppimg::after {
+        position: absolute;
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+        content: '';
+        /* background-color: ; */
+        background-image: linear-gradient(120deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .8));
+        /* opacity: .5; */
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
+    /* BOOKING STYLING */
+    
+    section.booking {
+        height: 800px;
+        width: 100%;
+        background-color: #7cb2f8;
+    }
+    
+    section.testimonials {
+        height: 800px;
+        width: 100%;
+        background-color: rgb(0, 255, 170);
+    }
+    
+    section.contact {
+        height: 800px;
+        width: 100%;
+        background-color: rgb(255, 0, 0);
+    }
