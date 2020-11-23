@@ -5,7 +5,7 @@
         position: absolute;
         font-family: verdana, sans-serif;
         /* overflow-x: hidden; */
-        background-color: rgb(201, 201, 201);
+        background-color: rgb(252, 252, 252);
         width: 100vw;
     }
     
@@ -74,26 +74,34 @@
         background-position: center right;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 190px;
+        height: 300px;
         width: 100%;
         top: -70px;
         /* position: absolute; */
     }
     
     img.img-header {
-        height: 200px;
-        width: 500px;
+        height: 250px;
+        width: 550px;
         position: absolute;
         top: 5px;
-        right: 200px;
+        right: 120px;
     }
     
     div.book-btn {
-        font-size: 16px;
-        border-radius: 20px;
+        font-size: 20px;
+        font-style: italic;
+        color: whitesmoke;
+        font-weight: 400;
+        border-radius: 30px;
+        border: 2px solid greenyellow;
         width: 40vw;
         background-color: #7cb2f8;
         padding: 10px;
+    }
+
+    div.book-btn span{
+        font-weight: 700;
     }
 
     ul.nav{
@@ -102,7 +110,7 @@
 
     
     div.events {
-        height: 200px;
+        /* height: 200px; */
         width: 100%;
         border-top: 1px solid black;
     }
@@ -110,7 +118,7 @@
     div.event {
         border: 1px solid black;
         padding: 20px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         width: 40vw;
     }
     /* MISSION STYLING */
@@ -123,12 +131,12 @@
     }
     
     div.small-line {
-        border-bottom: 2px solid black;
+        border: 1px solid black;
         width: 100%;
     }
     
     div.long-line {
-        border-bottom: 2px solid black;
+        border: 1px solid black;
         width: 100%;
     }
     
@@ -143,9 +151,10 @@
     
     img.profile-pic {
         width: 30vw;
-        height: 500px;
-        position: relative;
-        
+        height: 600px;
+        position: absolute;
+        /* top: 0px; */
+        /* bottom: 10px; */
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
         z-index: 3;
@@ -155,7 +164,7 @@
         border-radius: 100%;
         position: relative;
         width: 100%;
-        height: 500px;
+        height: 600px;
         background-color: #7cb2f8b0;
         display: flex;
         justify-content: center;
@@ -180,8 +189,10 @@
     div.mi-statement{
         /* background-color: red; */
         font-size: 20px;
-        line-height: 1.5;
+        line-height: 1.7;
         padding: 50px;
+        font-style: italic;
+        font-weight: 100;
     }
     /* BOOKING STYLING */
     
@@ -208,13 +219,13 @@
     }
 
     img.card-img{
-        height: 70%;
+        height: 60%;
         width: 100%;
     }
 
     div.book-card{
         /* position: absolute; */
-        height: 450px;
+        height: 500px;
         margin-bottom: 30px;
 
     }
@@ -344,4 +355,21 @@
         border: 1px solid whitesmoke;
         width: 80%;
         left: 8%;
+    }
+
+    div.bottom{
+        position: absolute;
+        z-index: 3;
+        bottom: 50px;
+        left: 5%;
+        border: 1px solid whitesmoke;
+        height: 20%;
+        align-content: center;
+        width: 90%;
+        
+    }
+    div.info{
+        height: 100px;
+        width: 200px;
+        background-color: whitesmoke;
     }
