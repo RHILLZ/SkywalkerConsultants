@@ -4,7 +4,7 @@
         box-sizing: border-box;
         position: absolute;
         font-family: verdana, sans-serif;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         background-color: rgb(252, 252, 252);
         width: 100vw;
     }
@@ -74,8 +74,8 @@
         background-position: center right;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 300px;
-        width: 100%;
+        height: 250px;
+        width: 100vw;
         top: -70px;
         /* position: absolute; */
     }
@@ -97,7 +97,7 @@
         border: 2px solid greenyellow;
         width: 40vw;
         background-color: #7cb2f8;
-        padding: 10px;
+        padding: 0.7rem;
     }
 
     div.book-btn span{
@@ -116,11 +116,49 @@
     }
     
     div.event {
-        border: 1px solid black;
-        padding: 20px;
-        /* margin-bottom: 20px; */
-        width: 40vw;
+        border-radius: 20px;
+        
     }
+    div.event img{
+        width: 40vw;
+        height: 150px;
+        border-radius: 20px;
+
+        
+    }
+    div.ww{
+        width: 40vw;
+        background-image: url('money.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    a.ww-event{
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 700;
+        color: greenyellow;
+        z-index: 3;
+        letter-spacing: .2rem;
+    }
+
+    div.ww::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.5);
+        z-index: 1;
+        border-radius: 20px;
+    }
+    
     /* MISSION STYLING */
     
     section.mission {
@@ -221,6 +259,8 @@
     img.card-img{
         height: 60%;
         width: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
     }
 
     div.book-card{
@@ -234,11 +274,11 @@
         position: absolute;
         bottom: 160px;
         right: 20px;
-        border: 1px solid black;
+        border: 1px solid greenyellow;
         border-radius: 100%;
         width: 80px;
         height: 80px;
-        background-color: #00409496;
+        background-color: #004094;
         color: White;
         display: flex;
         justify-content: center;
@@ -299,6 +339,41 @@
         top: 50px;
         /* left: -450px; */
         /* background-color: rgb(0, 182, 9); */
+    }
+
+    div.card{
+        max-width: 33vw;
+        border-radius: 15px;
+        /* position: absolute; */
+        margin-top: 30px;
+    }
+    div.t-profile-pic{
+        height: 80px;
+        width: 80px;
+        background-color: cornflowerblue;
+        border: 1px solid black;
+        position: absolute;
+        left: -50px;
+        top: -50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+
+    }
+
+    div.more-ttm{
+        text-align: center;
+        margin-top: 50px;
+
+    }
+    a.more-ttm-link{
+        text-decoration: none;
+        font-size: 18px;
+
     }
 
 
@@ -362,14 +437,72 @@
         z-index: 3;
         bottom: 50px;
         left: 5%;
-        border: 1px solid whitesmoke;
+        /* border: 1px solid whitesmoke; */
         height: 20%;
         align-content: center;
         width: 90%;
         
     }
     div.info{
-        height: 100px;
+        height: 150px;
         width: 200px;
         background-color: whitesmoke;
     }
+
+    h3.join-team{
+        color: cornflowerblue;
+        /* text-align: center; */
+    }
+
+    p.join-team-info{
+        /* width: 250px; */
+        /* text-align: center; */
+        color: whitesmoke;
+        font-size: 18px;
+
+    }
+    div.join-btn{
+        background-color: whitesmoke;
+        width: 200px;
+        text-align: center;
+        padding: .5rem;
+        float: right;
+        border-radius: 20px;
+    }
+    a.join-link{
+        text-decoration: none;
+        color: cornflowerblue;
+        font-weight: bold;
+
+    }
+
+
+    /* MEDIA QUERIES */
+
+    /* Mobile first, baby! */
+    @media only screen and (max-width: 600px) {
+        body{
+            background-color: orange;
+        }
+    }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{background-color: aqua;}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: greenyellow;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        background-color: red;
+    }
+}
+@media screen and (max-height: 720px){
+    body{
+        background-color: yellow;
+    }
+}
