@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
- 
-
-*{
+* {
     /* background-color: red; */
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -13,54 +10,71 @@
     /* background-color: red; */
     /* overflow-x: hidden; */
     /* background-color: #f4f4f4; */
-    
 }
-body{
+
+body {
     background-color: #f4f4f4;
 }
 
+i {
+    color: white;
+    position: relative;
+    z-index: 3;
+    /* text-align: end; */
+    transition-duration: 1s;
+    padding: 10px;
+}
+
+i:hover {
+    color: #1190CB;
+}
+
+
 /* Global Styles */
 
-header{
-    background-image: linear-gradient(from left red,white);
-    background-color:#f4f4f4;
+header {
+    background-image: linear-gradient(from left red, white);
+    background-color: #f4f4f4;
     display: flex;
     justify-content: space-between;
     color: white;
     min-height: 60px;
     border-bottom: 2px #1190CB solid;
-
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 30px;
 }
-header a{
+
+header a {
     color: rgb(170, 170, 170);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
 }
-header a.active{
+
+header a.active {
     color: #1190CB;
 }
 
-header ul{
+header ul {
     margin: 0;
     padding: 0;
 }
 
-header li{
+header li {
     display: inline;
     padding: 20px;
     border-right: 1px #1190CB solid;
-
 }
 
+
 /* MISSION SECTION */
-#mission{
+
+#mission {
     background-image: url("static/building.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -70,10 +84,11 @@ header li{
     position: relative;
     border-bottom: 2px #1190CB solid;
 }
-#mission::after{
+
+#mission::after {
     content: '';
     position: absolute;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
     top: 0;
     left: 0;
     height: 100%;
@@ -81,10 +96,9 @@ header li{
     z-index: 1;
     display: flex;
     flex-direction: row;
-
-
 }
-#mission h1{
+
+#mission h1 {
     color: white;
     position: absolute;
     top: 20px;
@@ -97,14 +111,15 @@ header li{
     text-transform: uppercase;
     color: #1190CB;
 }
-div.story{
+
+div.story {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* margin-top: 40px; */
 }
 
-#mission img{
+#mission img {
     position: relative;
     z-index: 2;
     padding-left: 30px;
@@ -112,10 +127,9 @@ div.story{
     border-bottom-right-radius: 30px;
     /* width: 300px; */
     margin-top: 50px;
-    
 }
 
-blockquote{
+blockquote {
     position: relative;
     z-index: 2;
     color: white;
@@ -124,33 +138,38 @@ blockquote{
     font-style: italic;
     margin-top: 50px;
 }
-cite{
+
+cite {
     margin-left: 500px;
 }
 
+
 /* EVENTS STYLES */
-#events{
+
+#events {
     min-height: 270px;
     border-bottom: 2px #1190CB solid;
 }
-#events h1{
+
+#events h1 {
     padding: 20px;
     color: #1190CB;
     text-transform: uppercase;
 }
-.events{
+
+.events {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-div.event{
+
+div.event {
     width: 40%;
     height: 150px;
     border-radius: 20px;
-
-    
 }
-div.event a{
+
+div.event a {
     position: relative;
     z-index: 1;
     text-decoration: none;
@@ -162,13 +181,15 @@ div.event a{
     text-transform: uppercase;
     text-align: center;
 }
-div.event1{
+
+div.event1 {
     background-image: url("static/gtt_logo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-div.event2{
+
+div.event2 {
     background-image: url("static/money.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,73 +198,92 @@ div.event2{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-div.event2::after{
+
+div.event2::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, .6);
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
 
+
 /* BOOKING STYLES */
 
-#services{
+#services {
     background-color: #1190CB;
     position: relative;
 }
-#services::after{
+
+#services::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
 }
-#services h1{
+
+#services h1 {
     padding: 20px;
     text-transform: uppercase;
     text-align: right;
     color: #f4f4f4;
     position: relative;
     z-index: 3;
+    margin-right: 20px;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
     z-index: 3;
+    margin-bottom: 20px;
+    /* margin-left: 30px; */
+    width: 100%;
 }
-.book-col{
+
+.book-col {
     width: 22%;
     /* height: 400px; */
-
-
 }
-.book-card{
+
+.book-card {
     background-color: #f4f4f4;
     /* padding: 20px; */
     margin-bottom: 20px;
     border-radius: 10px;
     height: 400px;
     position: relative;
+    box-shadow: 5px 5px 10px;
 }
-.book-card img{
+
+
+/* .book-card:hover {
+    transition-duration: 10s;
+    transition-property: width;
+    width: 400px;
+} */
+
+.book-card img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
     height: 60%;
 }
-.book-card h3{
+
+.book-card h3 {
     padding: 10px;
 }
-.book-btn{
+
+.book-btn {
     background-color: #1190CB;
     color: white;
     height: 80px;
@@ -252,69 +292,97 @@ div.event2::after{
     position: absolute;
     top: 180px;
     right: 10px;
-    border: 1px greenyellow solid;
+    /* border: 1px greenyellow solid; */
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, .5);
+    transition-duration: .5s;
 }
-.book-btn a{
+
+.book-btn:hover {
+    background-color: greenyellow;
+    /* color: #1190CB; */
+}
+
+.book-btn a {
     text-decoration: none;
     color: white;
-    font-size:18px;
+    font-size: 18px;
     font-weight: bold;
-
 }
-.book-card-info{
+
+.book-btn a:hover {
+    color: #1190CB;
+}
+
+.book-card-info {
     padding: 10px;
 }
-div.mid-row{
+
+div.mid-row {
     position: absolute;
     top: -50px;
 }
-div.first-row{
+
+div.first-row {
     /* position: absolute; */
+    margin-right: 100px;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
+
 /* TESTIMONIAL STYLES */
-#testimonials{
+
+#testimonials {
     min-height: 300px;
     background-color: #f4f4f4;
     position: relative;
     z-index: 3;
 }
-#testimonials::before{
+
+#testimonials::before {
     content: "";
     position: absolute;
     width: 50%;
     height: 450px;
     border-radius: 100%;
-    top: -50px;
+    top: -70px;
     left: 370px;
     right: 0px;
     background-color: #f4f4f4;
     z-index: -1;
-    
+    /* border-bottom: 2px #1190CB solid; */
+    /* box-shadow: 3px 3px 10px; */
 }
-#testimonials h1{
+
+#testimonials h1 {
     text-align: center;
     position: relative;
     z-index: 3;
 }
-div.ttm{
+
+div.ttm {
     padding: 20px;
     margin: 20px;
-    width: 30%;
+    width: 33%;
     height: 10rem;
     border-radius: 20px;
     background-color: #1190CB;
     position: relative;
+    box-shadow: 5px 5px 10px;
 }
-div.ttm p{
+
+div.ttm p {
     margin-top: 40px;
     color: white;
 }
-div.ttms{
-    display: flex;
 
+div.ttms {
+    display: flex;
 }
-div.identidy{
+
+div.identidy {
     width: 60px;
     height: 60px;
     border-bottom-left-radius: 0;
@@ -331,14 +399,16 @@ div.identidy{
     font-size: 20px;
     font-weight: 700;
 }
-a.more-ttm{
+
+a.more-ttm {
     display: flex;
     justify-content: center;
 }
 
+
 /* CONTACT STYLING */
 
-#contact{
+#contact {
     background-image: url("static/building2.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -347,39 +417,45 @@ a.more-ttm{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
+    border-top: 2px #1190CB solid;
     /* padding: 20px ; */
 }
-#contact::after{
+
+#contact::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
+    border-top: 2px #1190CB solid;
     /* z-index: -1; */
 }
-p.info-question{
+
+p.info-question {
     color: white;
     position: relative;
     font-size: 24px;
-    
     z-index: 2;
 }
-p.info-question span{
+
+p.info-question span {
     color: #1190CB;
     font-weight: 700;
 }
-div.subscribe{
+
+div.subscribe {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-input{
+
+input {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px #1190CB solid;
@@ -387,9 +463,12 @@ input{
     width: 55%;
     position: relative;
     z-index: 2;
-    padding: 1rem;
+    padding: .7rem;
+    font-size: 24px;
+    text-align: center;
 }
-.subscribe button{
+
+.subscribe button {
     width: 10%;
     height: 40px;
     position: relative;
@@ -399,7 +478,8 @@ input{
     background-color: #1190CB;
     border-radius: 20px;
 }
-div.bottom{
+
+div.bottom {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -409,36 +489,132 @@ div.bottom{
     width: 80%;
     margin-top: 100px;
 }
-.company-info{
-    padding: 10px;
-    background-color: rgba(0,0,0,.5);
-    width: 40%;
-    height: 140px;
 
+.company-info {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 40%;
+    height: 180px;
 }
-.oppurtunity{
+
+.oppurtunity {
     padding: 10px;
     /* background-color: rgba(0,0,0,.5); */
     width: 40%;
     height: 140px;
 }
-.oppurtunity h3{
+
+.oppurtunity h3 {
     color: #1190CB;
     font-weight: 700;
 }
-.oppurtunity p{
+
+.oppurtunity p {
     padding: 5px;
 }
-.oppurtunity button{
+
+.oppurtunity button {
     padding: 5px;
     color: white;
     background-color: #1190CB;
     width: 40%;
     border-radius: 20px;
+    margin-left: 250px;
 }
-.join-btn a{
+
+.join-btn a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
     color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: 300px;
+    /* padding: 10px; */
+}
+
+
+/* .social-links span {
+    color: white;
+    position: relative;
+    z-index: 3;
+    font-size: 18;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+
+/* FOOTER STYLES */
+
+#foot {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    color: #f4f4f4;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 760px) {
+    * {
+        overflow-x: hidden;
+    }
+    body {
+        /* background-color: red; */
+        /* overflow-x: hidden; */
+    }
+    nav {
+        display: none;
+    }
+    #mission img {
+        display: none;
+    }
+    #mission h1 {
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    #mission blockquote {
+        font-size: 16px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    #events {
+        text-align: center;
+        width: 100%;
+        /* max-height: 200px; */
+    }
+    #events h1 {
+        margin: 0;
+    }
+    div.event1 {
+        /* background-size: contain; */
+    }
+    div.event2::after {
+        border-radius: 0px;
+    }
+    div.events {
+        flex-direction: column;
+    }
+    div.event {
+        width: 90%;
+        margin: 0 10px 20px 10px;
+        border-radius: 0px;
+        max-height: 100px;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, .5);
+    }
+    div.container {
+        display: none;
+    }
 }
