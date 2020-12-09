@@ -564,6 +564,13 @@ div.bottom {
     letter-spacing: 4px;
 }
 
+
+/* HIDDEN UNTIL MOBILE */
+
+div.mobile-services {
+    display: none;
+}
+
 @media screen and (max-width: 760px) {
     * {
         overflow-x: hidden;
@@ -602,7 +609,7 @@ div.bottom {
         /* background-size: contain; */
     }
     div.event2::after {
-        border-radius: 0px;
+        border-radius: 5px;
     }
     div.events {
         flex-direction: column;
@@ -610,11 +617,25 @@ div.bottom {
     div.event {
         width: 90%;
         margin: 0 10px 20px 10px;
-        border-radius: 0px;
+        border-radius: 5px;
         max-height: 100px;
         box-shadow: 3px 3px 7px rgba(0, 0, 0, .5);
     }
     div.container {
         display: none;
+    }
+    div.mobile-services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    div.service h2 {
+        background-color: #f4f4f4;
+        color: white;
+        width: 100%;
+    }
+    div.service p {
+        color: white;
     }
 }
