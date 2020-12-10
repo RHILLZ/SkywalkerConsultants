@@ -167,6 +167,7 @@ div.event {
     width: 40%;
     height: 150px;
     border-radius: 20px;
+    box-shadow: 4px 4px 10px;
 }
 
 div.event a {
@@ -567,9 +568,10 @@ div.bottom {
 
 /* HIDDEN UNTIL MOBILE */
 
-div.mobile-services {
+div.mobile-services, div.menu {
     display: none;
 }
+
 
 @media screen and (max-width: 760px) {
     * {
@@ -615,27 +617,127 @@ div.mobile-services {
         flex-direction: column;
     }
     div.event {
+        
         width: 90%;
         margin: 0 10px 20px 10px;
         border-radius: 5px;
         max-height: 100px;
         box-shadow: 3px 3px 7px rgba(0, 0, 0, .5);
     }
+    div.event a{
+        font-size: 18px;
+    }
     div.container {
         display: none;
     }
+    #services h1{
+        text-align: center;
+    }
     div.mobile-services {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 3;
         width: 100%;
+        margin-bottom: 30px;
+    }
+    div.service{
+        width: 100%;
+        border-bottom: 1px #1190CB solid;
+        text-align: center;
+    }
+    div.service:hover{
+        
     }
     div.service h2 {
         background-color: #f4f4f4;
-        color: white;
+        color: #1190CB;
         width: 100%;
+        padding: 10px;
+    }
+    div.service p.info-hide{
+        display: none;
     }
     div.service p {
+        padding: 10px;
+        color: black;
+        background-color: white;
+    }
+    div.mobile-services h4{
         color: white;
+        text-align: center;
+        padding: 10px;
+
+    }
+    button.book-btn-mobile{
+        padding: 5px;
+        width: 80%;
+        align-self: center;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    button.book-btn-mobile a{
+        text-decoration: none;
+        color: #1190CB;
+        font-weight: 700;
+    }
+
+    #testimonials{
+        overflow-y: hidden;
+    }
+
+    div.ttms{
+        max-height: 250px;
+        overflow-x: auto;
+        width: 100%;
+        /* padding: 20px; */
+        /* margin: 20px; */
+    }
+    div.ttms::-webkit-scrollbar{
+        width: 0;
+    }
+
+    div.ttm{
+        min-width: 360px;
+        /* padding: 10px; */
+        /* margin-left: 20px; */
+    }
+
+    div.subscribe p{
+        text-align: center;
+    }
+    div.subscribe input{
+        height: 40px;
+        width: 90%;
+        /* margin: 10px; */
+    }
+    div.subscribe button{
+        width: 80%;
+    }
+
+    div.bottom{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    div.company-info{
+        width: 90%;
+        overflow-y: hidden;
+        margin: 10px;
+    }
+    div.oppurtunity{
+        width: 100%;
+        text-align: center;
+    }
+    button.join-btn{
+        height: 40px;
+        width: 80%;
+        margin: 0;
+    }
+    div.social{
+        margin-left: 40%;
+        text-align: center;
+        align-self: center;
     }
 }
