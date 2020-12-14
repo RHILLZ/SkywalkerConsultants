@@ -228,6 +228,7 @@ div.event2::after {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
+    border: 2px rgba(0, 0, 0, .8) solid;
 }
 
 #services h1 {
@@ -252,7 +253,7 @@ div.event2::after {
 }
 
 .book-col {
-    width: 22%;
+    width: 24%;
     /* height: 400px; */
 }
 
@@ -264,6 +265,7 @@ div.event2::after {
     height: 400px;
     position: relative;
     box-shadow: 5px 5px 10px;
+    /* margin-left: 30px; */
 }
 
 
@@ -282,6 +284,11 @@ div.event2::after {
 
 .book-card h3 {
     padding: 10px;
+}
+
+.book-card p{
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .book-btn {
@@ -332,6 +339,45 @@ h3 {
     text-transform: uppercase;
 }
 
+h3.general{
+    color: white;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 20px;;
+}
+
+button.book-free{
+    margin-bottom: 100px;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    border-radius: 30px;
+    /* align-self: center; */
+    margin-left: 37.5%;
+    box-shadow: 0 5px 10px;
+    transition: 1s ease;
+}
+button.book-free:hover{
+    color: white;
+    background-color: greenyellow;
+}
+button.book-free a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+}
+button.book-free span{
+    color: #1190CB;
+    font-weight: 800;
+    font-style: italic;
+}
+button.book-free a:hover{
+    color: #f4f4f4;
+}
 
 /* TESTIMONIAL STYLES */
 
@@ -681,6 +727,12 @@ div.mobile-services, div.menu {
         text-decoration: none;
         color: #1190CB;
         font-weight: 700;
+    }
+    button.book-free{
+        display: none;
+    }
+    h3.general{
+        display: none;
     }
 
     #testimonials{

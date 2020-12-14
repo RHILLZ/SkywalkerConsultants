@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.ttms{
+    background-image: url("static/logo.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-top: 150px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    /* margin-top: 50px; */
+    /* display: none; */
+}
+.ttms::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+    
+}
+.ttm{
+    position: relative;
+    z-index: 2;
+    margin: 3px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.half{
+    width: 48%;
+    height: 300px;
+    background-color: #dfdfdf
+}
+.full{
+    width: 73%;
+    height: 300px;
+    background-color: white;
+    color: #1190CB;
+}
+.quarter{
+    width: 25%;
+    height: 300px;
+    background-color: #1190CB;
+    color: white;
+}
+h1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: -600px;
+    z-index: 3;
+    color: #1190CB;
+    text-transform: uppercase;
+    margin-left:  600px;
+    margin-top: 35px;
+}
+div.line-short{
+    border: 2px #fff solid;
+    width: 15%;
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    right: 0;
+    margin-right: 20px;
+   
+}
+div.line-long{
+    border: 2px #fff solid;
+    width: 38%;
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: 0;
+    margin-left: 20px;
+    
+}
+.identidy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    font-size:34px;
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.ttm p{
+    padding: 20px;
+    font-size: 18px;
+}
+i{
+    color: #1190CB;
+    position: absolute;
+    top: 18px;
+    left: 80px;
+    z-index: 4;
+}
+h1.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 760px){
+    div.team h1{
+        font-size: 24px;
+        /* width: 100%; */
+        text-align: center;
+        right: 63px;
+        top: 35px;
+    }
+    div.line-short, div.line-long{
+        width: 12%;
+    }
+    i{
+        display: none;
+        opacity: 0;
+
+    }
+    div.ttms{
+        flex-direction: row;
+    }
+    h1.mobile{
+        display: flex;
+        font-size: 24px;
+        right: -90px;
+        top: 3px;
+        
+    }
+    h1.desktop{
+        display: none;
+    }
+    .ttm{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+   
+}
