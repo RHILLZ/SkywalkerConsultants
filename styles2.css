@@ -31,7 +31,8 @@ i:hover {
 
 
 /* Global Styles */
-button:focus{
+
+button:focus {
     outline: none;
 }
 
@@ -166,7 +167,7 @@ cite {
     align-items: center;
 }
 
- div.event {
+div.event {
     width: 40%;
     height: 400px;
     border-radius: 20px;
@@ -174,28 +175,30 @@ cite {
     margin-bottom: 30px;
     background-color: white;
 }
-div.event img{
+
+div.event img {
     width: 100%;
     height: 150px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: relative;
-    
 }
 
-
-div.event h2{
+div.event h2 {
     padding: 5px;
     margin-left: 10px;
     text-transform: uppercase;
 }
-div.event p{
+
+div.event p {
     padding: 10px;
 }
-div.events i{
+
+div.events i {
     color: #1190CB;
 }
-button.add{
+
+button.add {
     float: right;
     margin-right: 30px;
     padding: 5px;
@@ -207,11 +210,11 @@ button.add{
     transition: all .5s ease;
     cursor: pointer;
 }
-button.add:hover{
+
+button.add:hover {
     background-color: greenyellow;
     color: #1190CB;
 }
-
 
 
 /* BOOKING STYLES */
@@ -287,7 +290,7 @@ button.add:hover{
     padding: 10px;
 }
 
-.book-card p{
+.book-card p {
     font-size: 16px;
     font-weight: 500;
 }
@@ -340,15 +343,16 @@ h3 {
     text-transform: uppercase;
 }
 
-h3.general{
+h3.general {
     color: white;
     position: relative;
     z-index: 2;
     text-align: center;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    ;
 }
 
-button.book-free{
+button.book-free {
     margin-bottom: 100px;
     padding: 15px;
     background-color: white;
@@ -361,24 +365,28 @@ button.book-free{
     box-shadow: 0 5px 10px;
     transition: 1s ease;
 }
-button.book-free:hover{
+
+button.book-free:hover {
     color: white;
     background-color: greenyellow;
 }
-button.book-free a{
+
+button.book-free a {
     text-decoration: none;
     font-size: 20px;
     color: black;
-
 }
-button.book-free span{
+
+button.book-free span {
     color: #1190CB;
     font-weight: 800;
     font-style: italic;
 }
-button.book-free a:hover{
+
+button.book-free a:hover {
     color: #f4f4f4;
 }
+
 
 /* TESTIMONIAL STYLES */
 
@@ -431,7 +439,7 @@ div.ttms {
     align-items: center;
 }
 
-div.middle{
+div.middle {
     height: 15rem;
 }
 
@@ -519,13 +527,13 @@ input {
     padding: .7rem;
     font-size: 24px;
     text-align: center;
-    
 }
-input:focus{
+
+input:focus {
     outline: none;
 }
 
-.valid{
+.valid {
     font-size: 22px;
     color: greenyellow;
     text-align: center;
@@ -534,7 +542,8 @@ input:focus{
     position: relative;
     z-index: 10;
 }
-.invalid{
+
+.invalid {
     font-size: 22px;
     color: red;
     text-align: center;
@@ -643,10 +652,10 @@ div.bottom {
 
 /* HIDDEN UNTIL MOBILE */
 
-div.mobile-services, div.menu {
+div.mobile-services,
+div.menu {
     display: none;
 }
-
 
 @media screen and (max-width: 760px) {
     * {
@@ -693,7 +702,6 @@ div.mobile-services, div.menu {
         height: 100%;
     }
     div.event {
-        
         width: 90%;
         /* height: 300px; */
         margin: 0 10px 20px 10px;
@@ -701,17 +709,17 @@ div.mobile-services, div.menu {
         max-height: 500px;
         box-shadow: 3px 3px 7px rgba(0, 0, 0, .5);
     }
-    div.event img{
+    div.event img {
         border-radius: 5px;
         height: 120px;
     }
-    div.event a{
+    div.event a {
         font-size: 18px;
     }
     div.container {
         display: none;
     }
-    #services h1{
+    #services h1 {
         text-align: center;
     }
     div.mobile-services {
@@ -722,14 +730,14 @@ div.mobile-services, div.menu {
         width: 100%;
         margin-bottom: 30px;
     }
-    div.service{
+    div.service {
         width: 100%;
         /* height: 300px; */
         border-bottom: 1px #1190CB solid;
         text-align: center;
     }
-    div.service:hover{
-        
+    div.service-heading {
+        background-color: #f4f4f4;
     }
     div.service h2 {
         background-color: #f4f4f4;
@@ -737,32 +745,39 @@ div.mobile-services, div.menu {
         width: 100%;
         padding: 10px;
     }
-    div.service p.info-hide{
+    div.info-hide {
         display: none;
     }
-    div.info-hide{
-        display: none;
-    }
-    div.mobile-services-info{
+    div.mobile-services-info {
         /* height: 300px; */
         background-color: white;
-        transition: all 1s ease;
+        transition: all 2s ease;
     }
     div.service p {
         padding: 10px;
         color: black;
         background-color: white;
+        transition: all 2s ease;
     }
-    div.service a{
-
+    div.service-heading i {
+        background-color: #f4f4f4;
+        color: #1190CB;
+        text-decoration: none;
+        height: 100%;
+        margin-right: 20px;
     }
-    div.mobile-services h4{
+    div.service-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.mobile-services h4 {
         color: white;
         text-align: center;
         padding: 10px;
-
+        margin-top: 20px;
     }
-    button.book-btn-mobile{
+    button.book-btn-mobile {
         padding: 5px;
         width: 80%;
         align-self: center;
@@ -770,79 +785,73 @@ div.mobile-services, div.menu {
         font-size: 18px;
         font-weight: 600;
     }
-    button.book-btn-mobile a{
+    button.book-btn-mobile a {
         text-decoration: none;
         color: #1190CB;
         font-weight: 700;
     }
-    button.book-free{
+    button.book-free {
         display: none;
     }
-    h3.general{
+    h3.general {
         display: none;
     }
-
-    #testimonials{
+    #testimonials {
         overflow-y: hidden;
     }
-
-    div.ttms{
+    div.ttms {
         max-height: 250px;
         overflow-x: auto;
         width: 100%;
         /* padding: 20px; */
         /* margin: 20px; */
     }
-    div.ttms::-webkit-scrollbar{
+    div.ttms::-webkit-scrollbar {
         width: 0;
     }
-
-    div.ttm{
+    div.ttm {
         min-width: 360px;
         /* padding: 10px; */
         /* margin-left: 20px; */
     }
-    div.middle{
+    div.middle {
         height: 10rem;
     }
-
-    div.subscribe p{
+    div.subscribe p {
         text-align: center;
         /* margin-top: 20px; */
         /* height: 15rem; */
     }
-    div.subscribe input{
+    div.subscribe input {
         height: 40px;
         width: 90%;
         margin-top: 10px;
-        margin-bottom: ;
         /* margin: 10px; */
     }
-    div.subscribe button{
+    div.subscribe button {
         width: 80%;
     }
-
-    div.bottom{
+    div.bottom {
         flex-direction: column;
         width: 100%;
         margin: 0;
     }
-    div.company-info{
+    div.company-info {
         width: 90%;
         overflow-y: hidden;
         margin: 10px;
     }
-    div.oppurtunity{
+    div.oppurtunity {
         width: 100%;
         text-align: center;
         margin-bottom: 30px;
     }
-    button.join-btn{
+    button.join-btn {
         height: 40px;
         width: 80%;
         margin: 0;
     }
-    div.social{
+    div.social {
         margin-left: 40%;
         text-align: center;
         align-self: center;
