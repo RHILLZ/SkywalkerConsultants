@@ -8,12 +8,13 @@
     /* font-size: 16px; */
     line-height: 1.5;
     /* background-color: red; */
-    /* overflow-x: hidden; */
+    /* overflow: hidden; */
     /* background-color: #f4f4f4; */
 }
 
 body {
     background-color: #f4f4f4;
+    /* overflow-x: hidden; */
 }
 
 i {
@@ -44,6 +45,7 @@ header {
     color: white;
     min-height: 60px;
     border-bottom: 2px #1190CB solid;
+    overflow: hidden;
 }
 
 nav {
@@ -51,6 +53,7 @@ nav {
     align-items: center;
     justify-content: center;
     margin-right: 30px;
+    overflow: hidden;
 }
 
 header a {
@@ -653,18 +656,71 @@ div.bottom {
 /* HIDDEN UNTIL MOBILE */
 
 div.mobile-services,
-div.menu {
+i.mobile-menu{
+    display: none;
+}
+div.mobile-nav{
     display: none;
 }
 
-@media screen and (max-width: 760px) {
-    * {
+
+@media screen and (max-width: 767px) {
+    
+    body {
+        
         overflow-x: hidden;
     }
-    body {
-        /* background-color: red; */
-        /* overflow-x: hidden; */
+    i.show{
+        display:block;
+        color: #1190CB;
+        margin-top: 20px;
+        margin-right: 20px;
+        transition: all 1s ease;
+        transform: rotate(360deg);
+        position: relative;
+        font-weight: 300;
+        z-index: 100;
+
     }
+    div.mobile-nav{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .9);
+        /* align-items: center; */
+        justify-content: center;
+        transition: transform .5s ease;
+        transform: translateX(100%);
+      
+        
+    }
+    div.mobile-nav li{
+        color: #fff;
+        text-decoration: none;
+    }
+    div.mobile-nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+    }
+    div.mobile-nav a{
+        color: #1190CB;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    div.mobile-nav.mobile-nav-active{
+        transform: translateX(0%);
+    }
+     
+    
     nav {
         display: none;
     }
@@ -678,7 +734,7 @@ div.menu {
         width: 100%;
     }
     #mission blockquote {
-        font-size: 16px;
+        font-size: 17px;
         width: 100%;
         padding: 10px;
         text-align: center;
@@ -691,9 +747,7 @@ div.menu {
     #events h1 {
         margin: 0;
     }
-    div.event1 {
-        /* background-size: contain; */
-    }
+
     div.event2::after {
         border-radius: 5px;
     }
@@ -749,9 +803,24 @@ div.menu {
         display: none;
     }
     div.mobile-services-info {
-        /* height: 300px; */
+        height: auto;
         background-color: white;
-        transition: all 2s ease;
+        transition: all 1s ease;
+    }
+    div.mobile-services-info a{
+        background-color: #1190CB;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        /* text-transform: uppercase; */
+    }
+    div.mobile-services-info a:hover{
+        background-color: greenyellow;
+        color: #1190CB;
     }
     div.service p {
         padding: 10px;
@@ -765,6 +834,7 @@ div.menu {
         text-decoration: none;
         height: 100%;
         margin-right: 20px;
+        transition: all .5s ease;
     }
     div.service-heading {
         display: flex;
@@ -784,6 +854,7 @@ div.menu {
         border-radius: 15px;
         font-size: 18px;
         font-weight: 600;
+        margin-bottom: 20px;
     }
     button.book-btn-mobile a {
         text-decoration: none;
@@ -819,7 +890,7 @@ div.menu {
     }
     div.subscribe p {
         text-align: center;
-        /* margin-top: 20px; */
+        margin-top: 20px;
         /* height: 15rem; */
     }
     div.subscribe input {
@@ -855,5 +926,8 @@ div.menu {
         margin-left: 40%;
         text-align: center;
         align-self: center;
+    }
+    section#contact{
+        height: auto;
     }
 }
