@@ -108,6 +108,7 @@ header li {
 #mission h1 {
     color: white;
     position: absolute;
+    font-size: 30px;
     top: 20px;
     right: 100px;
     z-index: 2;
@@ -161,6 +162,7 @@ cite {
 #events h1 {
     padding: 20px;
     color: #1190CB;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
@@ -246,6 +248,7 @@ button.add:hover {
     position: relative;
     z-index: 3;
     margin-right: 20px;
+    font-size: 34px;
 }
 
 .container {
@@ -260,7 +263,7 @@ button.add:hover {
 }
 
 .book-col {
-    width: 24%;
+    width: 25%;
     /* height: 400px; */
 }
 
@@ -296,6 +299,7 @@ button.add:hover {
 .book-card p {
     font-size: 16px;
     font-weight: 500;
+    padding: 1rem;
 }
 
 .book-btn {
