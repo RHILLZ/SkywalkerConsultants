@@ -79,7 +79,7 @@ header li {
 /* MISSION SECTION */
 
 #mission {
-    background-image: url("static/building.jpg");
+    background-image: url("../static/building.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -494,11 +494,11 @@ a.more-ttm {
 /* CONTACT STYLING */
 
 #contact {
-    background-image: url("static/building2.jpg");
+    background-image: url("../static/building2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
+    min-height: 80vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -517,7 +517,7 @@ a.more-ttm {
     width: 100%;
     background-color: rgba(0, 0, 0, .7);
     border-top: 2px #1190CB solid;
-    /* z-index: -1; */
+    z-index: 1;
 }
 
 p.info-question {
@@ -525,6 +525,7 @@ p.info-question {
     position: relative;
     font-size: 24px;
     z-index: 2;
+    height: auto;
 }
 
 p.info-question span {
@@ -533,6 +534,7 @@ p.info-question span {
 }
 
 div.subscribe {
+    min-height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -603,7 +605,7 @@ div.bottom {
     padding: 20px;
     background-color: rgba(0, 0, 0, .5);
     width: 40%;
-    height: 180px;
+    height: auto;
 }
 
 .oppurtunity {
@@ -710,6 +712,7 @@ div.mobile-nav{
 
     div.where img.ig{
         width: 100%;
+        height: auto;
     }
 
     body, html{
