@@ -45,7 +45,7 @@
              text.innerHTML = '';
          }
 
-     })
+     });
 
      subscribe.addEventListener('click', () => {
          const subscribersEmail = email.value;
@@ -54,9 +54,9 @@
         
         email.style.display ='none';
         subscribe.style.display = 'none';
-        text.innerHTML = 'Thank You for Subscribing!'
+        text.innerHTML = 'Thank You for Subscribing!';
         
-     })
+     });
 
 
      var showInfo = document.querySelectorAll(".show-info");
@@ -82,7 +82,7 @@
                 rollovers.children[1].classList.add('info-hide');
                 icon.style.transform = "rotate(0deg)";
          }
-     })
+     });
      longTerm.addEventListener('click', ()=>{
         const icon = longTerm.children[0].children[1];
          if(longTerm.children[1].classList.contains('info-hide')){
@@ -94,7 +94,7 @@
                 longTerm.children[1].classList.add('info-hide');
                 icon.style.transform = "rotate(0deg)";
          }
-     })
+     });
      collegePlan.addEventListener('click', ()=>{
         const icon = collegePlan.children[0].children[1];
          if(collegePlan.children[1].classList.contains('info-hide')){
@@ -106,7 +106,7 @@
                 collegePlan.children[1].classList.add('info-hide');
                 icon.style.transform = "rotate(0deg)";
          }
-     })
+     });
      lifeInsurance.addEventListener('click', ()=>{
         const icon = lifeInsurance.children[0].children[1];
          if(lifeInsurance.children[1].classList.contains('info-hide')){
@@ -118,7 +118,7 @@
                 lifeInsurance.children[1].classList.add('info-hide');
                 icon.style.transform = "rotate(0deg)";
          }
-     })
+     });
      legacyPlan.addEventListener('click', ()=>{
         const icon = legacyPlan.children[0].children[1];
          if(legacyPlan.children[1].classList.contains('info-hide')){
@@ -130,22 +130,20 @@
                 legacyPlan.children[1].classList.add('info-hide');
                 icon.style.transform = "rotate(0deg)";
          }
-     })
+     });
      willsAndTrust.addEventListener('click', ()=>{
          const icon = willsAndTrust.children[0].children[1];
-         console.log(icon);
+    
          if(willsAndTrust.children[1].classList.contains('info-hide')){
 
-             willsAndTrust.children[1].classList.remove('info-hide');
-            
+            willsAndTrust.children[1].classList.remove('info-hide');
             icon.style.transform = "rotate(180deg)";
         }else{
             
             willsAndTrust.children[1].classList.add('info-hide');
-            
-                icon.style.transform = "rotate(0deg)";
+            icon.style.transform = "rotate(0deg)";
          }
-     })
+     });
 
 
 
@@ -162,13 +160,13 @@ hamburger.addEventListener('click',()=>{
     close.classList.toggle('show');
     mobileNav.classList.toggle('mobile-nav-active');
     
-})
+});
 
 close.addEventListener('click', ()=>{
     close.classList.toggle('show');
     hamburger.classList.toggle('show');
     mobileNav.classList.toggle('mobile-nav-active');
-})
+});
 
 const navLinks = document.querySelectorAll('a');
 
@@ -179,7 +177,7 @@ for(var navLink of navLinks){
         close.classList.toggle('show');
         hamburger.classList.toggle('show');
         mobileNav.classList.toggle('mobile-nav-active');
-    })
+    });
 }
     
 
