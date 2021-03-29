@@ -9,9 +9,11 @@
     
 }
 
-body {
+body, html {
     background-color: #f4f4f4;
-    overflow-x: hidden;
+    overflow-x: hidden !important; 
+    width: 100%;
+    height: 100%;
 }
 
 i {
@@ -241,9 +243,11 @@ button.add:hover {
 
 /* BOOKING STYLES */
 
-#services {
+section#services {
     background-color: #1190CB;
     position: relative;
+    height: auto;
+    /* min-height: 1000px; */
 }
 
 #services::after {
@@ -263,9 +267,9 @@ button.add:hover {
     text-align: right;
     color: #f4f4f4;
     position: relative;
-    z-index: 3;
+    z-index: 5;
     margin-right: 20px;
-    font-size: 34px;
+    font-size: 30px;
 }
 
 .container {
@@ -498,7 +502,7 @@ a.more-ttm {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -506,6 +510,7 @@ a.more-ttm {
     align-items: center;
     border-top: 2px #1190CB solid;
     /* padding: 20px ; */
+    overflow: hidden;
 }
 
 #contact::after {
@@ -612,7 +617,7 @@ div.bottom {
     padding: 10px;
     /* background-color: rgba(0,0,0,.5); */
     width: 40%;
-    height: 140px;
+    height: auto;
 }
 
 .oppurtunity h3 {
@@ -625,6 +630,7 @@ div.bottom {
     padding: .1rem;
     letter-spacing: 1.2;
     font-size: 20px;
+    text-align: left;
 }
 
 .oppurtunity button {
@@ -644,9 +650,9 @@ div.bottom {
 }
 div.img-container{
     position: absolute;
-    right: -330px;
-    bottom: -120px;
-    max-height: 600px;
+    right: -300px;
+    /* bottom: 0; */
+    max-height: 610px;
     overflow: hidden;
     
     
@@ -654,7 +660,8 @@ div.img-container{
 
 div.img-container img{
     height: 800px;
-    
+    position: relative;
+    bottom: -20px;
 }
 
 .social-links {
@@ -665,9 +672,9 @@ div.img-container img{
 
 .social {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     /* padding: 10px; */
 }
 
@@ -691,6 +698,9 @@ div.img-container img{
     font-weight: 300;
     letter-spacing: 4px;
 }
+footer{
+    height: auto;
+}
 
 
 /* HIDDEN UNTIL MOBILE */
@@ -704,7 +714,7 @@ div.mobile-nav{
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
 
     div.img-container{
         display: none;
@@ -717,7 +727,10 @@ div.mobile-nav{
 
     body, html{
         max-width: 100% !important;
+       
         overflow-x: hidden !important;
+        margin: 0;
+        padding: 0;
     }
     body{
         position: relative;
@@ -778,20 +791,30 @@ div.mobile-nav{
     nav {
         display: none;
     }
+    div.story{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
     #mission img {
         display: none;
     }
     #mission h1 {
         text-align: center;
-        top: 0;
-        left: 0;
+        left:0;
         width: 100%;
+        position: relative;
+        margin-bottom: 20px;
     }
     #mission blockquote {
         font-size: 17px;
         width: 100%;
-        padding: 10px;
+        /* height: auto; */
+        padding: 1rem;
         text-align: center;
+        margin-top: 0;
     }
     #events {
         text-align: center;
@@ -810,11 +833,11 @@ div.mobile-nav{
         height: 100%;
     }
     div.event {
-        width: 90%;
-        /* height: 300px; */
+        width: auto;
+        height: auto;
         margin: 0 10px 20px 10px;
         border-radius: 5px;
-        max-height: 500px;
+        /* max-height: 500px; */
         box-shadow: 3px 3px 7px rgba(0, 0, 0, .5);
     }
     div.event img {
@@ -941,12 +964,10 @@ div.mobile-nav{
         /* padding: 10px; */
         /* margin-left: 20px; */
     }
-    div.middle {
-        height: 10rem;
-    }
+   
     div.subscribe p {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 40px;
         /* height: 15rem; */
     }
     div.subscribe input {
@@ -957,39 +978,55 @@ div.mobile-nav{
     }
     div.subscribe button {
         width: 80%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     div.bottom {
+        /* display: flex; */
         flex-direction: column;
+        /* justify-content: center; */
         width: 100%;
+        /* min-height: 100vh; */
         margin: 0;
     }
     div.company-info {
         width: 90%;
         overflow-y: hidden;
-        margin: 10px;
         margin-bottom: 20px;
+       
     }
     div.oppurtunity {
+        position: relative;
+        top: 0;
         width: 100%;
         text-align: center;
-        margin-bottom: 30px;
+        
+    }
+    div.oppurtunity h4{
+        font-size: 16px;
+        text-align: center;
+        padding: .5rem;
     }
     button.join-btn {
         height: 40px;
-        width: 80%;
-        margin: 0;
+        width: auto;
+        margin-bottom: 30px;
+        
     }
     div.social {
         margin-left: 40%;
         text-align: center;
         align-self: center;
     }
+
     section#contact{
+        display: flex;
+        justify-content: space-evenly;
         min-height: 100vh;
     }
+    
     footer{
         font-size: 12px;
     }
 }
+
