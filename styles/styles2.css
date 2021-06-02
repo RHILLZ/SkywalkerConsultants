@@ -157,6 +157,26 @@ cite {
 
 /* EVENTS STYLES */
 
+img.special-event{
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px black;
+    margin-bottom: 20px;
+
+    
+}
+
+img.special-event:hover{
+    height: 600px;
+    border-radius: 5px;
+    transition-duration: 2000ms;
+}
+
+img.ig{
+    width: auto;
+}
+
 #events {
     min-height: 270px;
     border-bottom: 2px #1190CB solid;
@@ -176,13 +196,15 @@ cite {
 }
 
 div.event {
-    width: 40%;
+    width: 25%;
     height: auto;
     border-radius: 15px;
     box-shadow: 2px 3px 5px;
     margin-bottom: 30px;
     background-color: white;
 }
+
+
 
 div.event img {
     width: 100%;
