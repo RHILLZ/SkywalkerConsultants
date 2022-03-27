@@ -55,6 +55,43 @@ nav {
     overflow: hidden;
 }
 
+div.agent-connect{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+button.agent{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px white solid;
+    font-weight: bold;
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-box-shadow: 4px 3px 10px -1px #000000; 
+    box-shadow: 4px 3px 10px -1px #000000;
+    
+}
+button.agent:active{
+    -webkit-box-shadow: inset 5px 5px 15px 5px #000000; 
+    box-shadow: inset 5px 5px 15px 5px #000000;
+}
+button.agent:hover{
+    background-color: #1190CB;
+    border: 1px #1190CB solid;
+    color: greenyellow;
+}
+div.agent-connect a{
+    color: gray;
+}
+
+button.agent a:hover{
+    color: greenyellow;
+}
+
 header a {
     color: rgb(170, 170, 170);
     text-decoration: none;
